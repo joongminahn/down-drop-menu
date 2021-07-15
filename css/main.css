@@ -129,8 +129,7 @@ section{
   text-align:center;
  }  
 
-.wrapper3 .main-menu3{
-  width: inherit;
+.wrapper3 .main-menu3{  
   height: 100%;  
   font-size: 0px;
   
@@ -158,8 +157,7 @@ a {
  .wrapper3 .main-menu3 > li > .submenu3{
   width: 100%; 
   position: absolute;
-  background-color:#35477d;
-    
+  background-color:#35477d;    
   text-align: center;   
   top: 100%;
   left:-1%;
@@ -185,6 +183,63 @@ a {
   .wrapper3 .main-menu3 > li > .submenu3 > li:hover{ 
     background-color:cyan;
   }
+/* wrapper4 start----------------------------------------------------------------------- */
 
+.wrapper4{  
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  margin: 0 auto;
+}
+.submenu4 > li > a{
+  text-decoration: none;
+  color:#35477d;
+}
+.wrapper4 > .main-menu4 {
+  width: 936px;
+  font-size: 0px;
+  text-align: center;
+  
+}
+.wrapper4 > .main-menu4 > li{
+  width: 120px;
+  padding: 8px 16px;
+  background-color:azure;
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  border:2px solid cadetblue;  
+}
+.wrapper4 > .main-menu4 > li >.submenu4{
+  width: 102.5%;
+  /* 102.5% */
+  text-align: center;
+  background-color:whitesmoke;
+  opacity:0;
+  visibility: hidden;
+  position: absolute;
+  transition: all .2s;  
+  left:-1%;
+  border: 2px solid cadetblue;
+  box-sizing: border-box;
+  top: 100%;  
+}
+.wrapper4 > .main-menu4 > li:hover >.submenu4{
+  opacity: 1;
+  visibility: visible;
+  
+}
+.wrapper4 > .main-menu4 > li >.submenu4>li{
+  transition: all .2s;
+  border-bottom: 2px solid cadetblue;
+}
 
+.wrapper4 > .main-menu4 > li >.submenu4>li:last-child{
+  transition: all .2s;
+  border-bottom: hidden;
+}
+
+.wrapper4 > .main-menu4 > li >.submenu4>li:hover{
+  background-color:cornflowerblue;  
+}
 
